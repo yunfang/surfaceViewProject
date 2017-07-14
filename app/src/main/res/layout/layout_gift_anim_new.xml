@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/anim_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/iv_gift_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/nobility_170_anim_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_from_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:gravity="left"
+            android:maxEms="5"
+            android:singleLine="true"
+            android:text="吴彦祖吴彦祖"
+            android:textColor="#302883"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_send_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="送"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:textColor="#ccffffff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_to_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dip"
+            android:gravity="bottom|left"
+            android:maxEms="5"
+            android:singleLine="true"
+            android:text="某某某某"
+            android:textColor="#302883"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_gift_count_shaow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="66"
+                android:textColor="#ffff36"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_gift_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_gift_count_shaow"
+                android:layout_alignLeft="@id/tv_gift_count_shaow"
+                android:layout_alignRight="@id/tv_gift_count_shaow"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="66"
+                android:textColor="#fedb1b"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:gravity="bottom|center_horizontal"
+            android:text="个"
+            android:textColor="#ccffffff"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/iv_gift_icon"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginBottom="10dip"
+            android:src="@drawable/car111"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_even_send_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_gift_bg"
+        android:layout_centerVertical="true"
+        android:gravity="bottom|center_horizontal" >
+
+        <TextView
+            android:id="@+id/tv_even_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:maxEms="2"
+            android:text="连送"
+            android:textColor="#fedb1b"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_even_send"
+            android:layout_below="@id/tv_even_send"
+            android:gravity="top"
+            android:text="X"
+            android:textColor="#fedb1b"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_gift_group_count_shaow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_even_send"
+            android:layout_toRightOf="@id/tv_even_send"
+            android:gravity="center_horizontal"
+            android:text="99"
+            android:textColor="#ffff36"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_gift_group_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_gift_group_count_shaow"
+            android:layout_alignLeft="@id/tv_gift_group_count_shaow"
+            android:layout_alignRight="@id/tv_gift_group_count_shaow"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/tv_even_send"
+            android:gravity="center_horizontal"
+            android:text="99"
+            android:textColor="#fedb1b"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

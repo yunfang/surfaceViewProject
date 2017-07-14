@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_mount_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/nobility_mount_bg" />
+
+    <ImageView
+        android:id="@+id/iv_nobility_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_mount_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp" />
+
+    <TextView
+        android:id="@+id/tv_hint_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_mount_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dip"
+        android:background="@drawable/nobility_hint_bg"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textSize="14sp"
+         />
+
+    <TextView
+        android:id="@+id/tv_nobility_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_mount_bg"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="10dip"
+        android:layout_toLeftOf="@+id/iv_nobility_icon"
+        android:background="@drawable/nobility_level_bg"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:singleLine="false"
+		android:maxEms="2"
+		/>
+
+</RelativeLayout>
